@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center;">
+    <div style="max-width: 600px;margin: auto;">
+        <md-tab-group>
+            <md-tab *ngFor="let tab of tabs" [label]="tab.name">
+                <app-release-downloads [user]="tab.user" [repo]="tab.repo">
+                </app-release-downloads>
+            </md-tab>
+        </md-tab-group>
+    </div>
+</div>

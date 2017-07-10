@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+.base {
+    background-color: #ECEFF1;
+}
+
+.tag {
+    margin-top: 2px;
+}
+
+.tag.release {
+    color: #00796B;
+    ;
+}
+
+.tag.prerelease {
+    color: #C62828;
+}

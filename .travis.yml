@@ -1,0 +1,24 @@
+language: node_js
+sudo: false
+dist: trusty
+
+before_install:
+  - npm install -g @angular/cli@latest
+
+install:
+  - npm install
+
+script:
+  - ng build --prod && npm run sw
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
+
+cache:
+  directories:
+    - $HOME/.npm

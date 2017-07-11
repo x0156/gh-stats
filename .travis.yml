@@ -1,27 +1,30 @@
 language: node_js
 sudo: false
 dist: trusty
+node_js:
+  - "7"
 
 addons:
     chrome: stable
-    
+
 before_install:
-  - npm install -g @angular/cli@latest
+    - npm install -g @angular/cli@latest
 
 install:
-  - npm install
+    - npm install
 
 script:
-  - ng build --prod && npm run sw
+    - ng tests --watch=false
+    - ng build --prod && npm run sw
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
-  on:
-    branch: master
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: dist
+    on:
+        branch: master
 
 cache:
-  directories:
-    - $HOME/.npm
+    directories:
+        - $HOME/.npm

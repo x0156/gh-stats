@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
         "ng": "ng",
-        "heroku-prebuild": "npm install -g http-server @angular/cli",
+        "heroku-prebuild": "npm install -g http-server",
         "heroku-postbuild": "ng build --prod",
         "start": "http-server dist/",
         "build": "webpack",

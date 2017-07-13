@@ -14,7 +14,6 @@ import { TrafficComponent } from './stats/traffic/traffic.component';
 import { ViewsComponent } from './stats/traffic/views.component';
 
 export const appRoutes: Routes = [
-  { path: 'gh-callback', component: GitHubComponent },
   { path: '', pathMatch: 'full', component: GitHubComponent },
   { path: '**', component: PageNotFoundComponent }
 ];

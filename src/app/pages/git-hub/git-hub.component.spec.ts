@@ -32,11 +32,4 @@ describe('GitHubComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should render progress-bar', async(() => {
-    const compiled = fixture.debugElement.nativeElement;
-    setTimeout(() => {
-      expect(compiled.querySelector('md-progress-bar')).toBeTruthy();
-    }, 1000);
-  }));
 });

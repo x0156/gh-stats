@@ -18,3 +18,27 @@
 .tag.prerelease {
     color: #C62828;
 }
+
+.view.title {
+    width: 50%;
+}
+
+.view.head {
+    width: 100%;
+    font-size: 24px;
+    background-color: rgb(103, 58, 183);
+    color: white;
+    height: 40px;
+}
+
+.count {
+    font-weight: 900;
+    background-color: rgb(255, 161, 181)!important;
+    color: #673AB7!important;
+}
+
+.uniques {
+    font-weight: 900;
+    background-color: rgb(134, 199, 243)!important;
+    color: #673AB7!important;
+}

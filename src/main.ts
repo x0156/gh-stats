@@ -12,7 +12,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .then(() => registerServiceWorker());
 
 function registerServiceWorker() {
-  if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator && environment.production) {
     navigator.serviceWorker.register('sw.js').then(function (reg) {
       reg.onupdatefound = function () {
         const installingWorker = reg.installing;

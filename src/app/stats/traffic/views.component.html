@@ -1,0 +1,10 @@
+<md-card class="traffic" *ngIf="barChartLabels" style="margin:.5em;padding: 4px">
+    <md-card-header style="margin:1.2em;">
+        <span class="view title"><md-chip class="count" selected="true">Count     {{count}}</md-chip></span>
+        <span class="view title"><md-chip class="uniques" selected="true">Unique    {{uniques}}</md-chip></span>
+    </md-card-header>
+    <md-card-content>
+        <canvas baseChart [datasets]="barChartData " [labels]="barChartLabels " [options]="barChartOptions " [legend]="barChartLegend " [chartType]="barChartType ">
+                </canvas>
+    </md-card-content>
+</md-card>

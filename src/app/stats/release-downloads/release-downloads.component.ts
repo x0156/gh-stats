@@ -1,8 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-
 import { IRelease } from 'app/models/irelease';
-import { ReleaseStatsService } from 'app/services/release-stats.service';
+import { StatsService } from 'app/services/stats.service';
 const MB = 1024 * 1024;
 const KB = 1024;
 @Component({
@@ -11,41 +10,18 @@ const KB = 1024;
   styleUrls: ['./release-downloads.component.css']
 })
 export class ReleaseDownloadsComponent implements OnInit {
-
-  private _user = 'cognizantqahub';
-  private _repo = 'Cognizant-Intelligent-Test-Scripter';
-
   @Input()
-  public set user(user: string) {
-    if (user && user !== '') {
-      this._user = user;
-    }
-  }
+  public user;
   @Input()
-  public set repo(repo: string) {
-    if (repo && repo !== '') {
-      this._repo = repo;
-    }
-  }
-  public get user() {
-    return this._user;
-  }
-  public get repo() {
-    return this._repo;
-  }
+  public repo;
 
   public releases: Observable<IRelease[]>;
 
-  public timer = 30;
-
-  constructor(private _releaseStats: ReleaseStatsService) {
+  constructor(private stats: StatsService) {
   }
 
   ngOnInit() {
-    this._releaseStats.tick().subscribe((any) => {
-      this.timer = (100 - ((any + 1) % this._releaseStats.interval) * 100 / this._releaseStats.interval);
-    });
-    this.releases = this._releaseStats.getReleases(this.user, this.repo);
+    this.releases = this.stats.getReleases(this.user, this.repo);
   }
   public stringify(object: any): string {
     return JSON.stringify(object);

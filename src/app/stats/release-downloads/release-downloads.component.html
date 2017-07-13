@@ -1,10 +1,4 @@
-<div>
-    <button md-button style="font-size: 20px;padding:.8em;">
-     <a href="http://github.com/{{user}}/{{repo}}/releases">{{repo}}</a>
-    </button>
-    <md-progress-bar mode="determinate" [value]="timer"></md-progress-bar>
-</div>
-<div *ngFor="let release of (releases| async)" style="max-width:600px;margin:.5em;">
+<div *ngFor="let release of (releases| async)" style="margin:.5em;">
     <md-card *ngIf="release.assets[0]">
         <md-card-header>
             <div md-card-avatar style="margin-right:10px;">

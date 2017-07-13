@@ -3,9 +3,11 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { ReleaseDownloadsComponent } from './stats/release-downloads/release-downloads.component';
-import { ReleaseStatsService } from './services/release-stats.service';
+import { StatsService } from './services/stats.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { RouterModule, Routes } from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
+import { RouterTestingModule } from '@angular/router/testing';
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
@@ -16,27 +18,19 @@ describe('AppComponent', () => {
         AppComponent,
         ReleaseDownloadsComponent
       ],
-      providers: [ReleaseStatsService],
-      imports: [MaterialModule, HttpModule, JsonpModule, BrowserAnimationsModule]
+      providers: [StatsService],
+      imports: [MaterialModule, HttpModule, JsonpModule,
+        RouterTestingModule.withRoutes([]),
+        ChartsModule
+        , BrowserAnimationsModule]
     }).compileComponents();
-  fixture = TestBed.createComponent(AppComponent);
-  component = fixture.debugElement.componentInstance;
-}));
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.debugElement.componentInstance;
+  }));
 
 
   it('should create the app', async(() => {
     expect(component).toBeTruthy();
   }));
 
-  it('should render tabs', async(() => {
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('md-tab-group')).toBeTruthy();
-  }));
-  it(`should render all the tabs`, (() => {
-    component.title = '!';
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelectorAll('.mat-tab-label').length)
-      .toBe(component.tabs.length);
-  }));
 });

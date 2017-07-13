@@ -1,0 +1,15 @@
+<div *ngIf="clone">
+    <md-card style="margin:.5em;padding: 0px">
+        <button md-raised-button class="view head">Clones</button>
+    </md-card>
+    <app-traffic-views [data]="clone.clones" [count]="clone.count" [uniques]="clone.uniques">
+    </app-traffic-views>
+</div>
+
+<div *ngIf="view">
+    <md-card style="margin:.5em;padding: 0px">
+        <button md-raised-button class="view head">Views</button>
+    </md-card>
+    <app-traffic-views [data]="view.views" [count]="view.count" [uniques]="view.uniques">
+    </app-traffic-views>
+</div>

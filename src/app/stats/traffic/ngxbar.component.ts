@@ -22,8 +22,8 @@ interface IView {
       [xAxis]="true"
       [yAxis]="true"
       [legend]="false"
-      [xAxisLabel]="Time"
-      [yAxisLabel]="Count"
+      [xAxisLabel]="'Time'"
+      [yAxisLabel]="'Count'"
       [roundEdges]="false"
       [groupPadding]="4"
       [barPadding]="8">

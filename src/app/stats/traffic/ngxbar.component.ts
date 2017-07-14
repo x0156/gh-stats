@@ -44,7 +44,7 @@ export class NgXBarComponent {
         });
     }
     //@Input()
-    public view: any[] = [600, 300];
+    public view: any[] = [640, 320];
     @Input()
     public colors: string[] = ['#673ab7', '#607d8b'];
 

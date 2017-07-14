@@ -52,3 +52,9 @@
 * {
     outline: none;
 }
+
+.chartWrapper {
+    height: 320px;
+    width: 700px;
+    display: block;
+}

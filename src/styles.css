@@ -31,6 +31,12 @@
     height: 40px;
 }
 
+.view.card {
+    margin: .5em;
+    padding: 0px;
+    height: 40px;
+}
+
 .count {
     font-weight: 700;
     background-color: #673AB7!important;
@@ -41,4 +47,8 @@
     font-weight: 700;
     background-color: #607d8b!important;
     color: white!important;
+}
+
+* {
+    outline: none;
 }

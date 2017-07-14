@@ -9,49 +9,15 @@ import { IRelease } from 'app/models/irelease';
 export class ViewsComponent implements OnInit {
 
   @Input()
-  public set data(ds: IView[]) {
-    if (ds) {
-      this.ds = ds;
-      const labels = [];
-      const count = [];
-      const unique = [];
-      ds.forEach((e) => {
-        labels.push(new Date(e.timestamp).toDateString());
-        count.push(e.count);
-        unique.push(e.uniques);
-      });
-      this.barChartLabels = [...labels];
-      this.barChartData = [
-        { data: [...count], label: 'Count' },
-        { data: [...unique], label: 'Uniques' }
-      ]
-    }
-  };
-  public ds;
+  public data;
   @Input()
   public count;
   @Input()
   public uniques;
-
-  public barChartOptions: any = {
-    scaleShowVerticalLines: false,
-    responsive: true
-  };
-  public barChartLabels: string[];
-  public barChartType = 'bar';
-  public barChartLegend = false;
-
-  public barChartData: any[];
-
   constructor() {
   }
   ngOnInit() {
 
   }
-
-
 }
 
-interface IView {
-  timestamp: string, count: number, uniques: number
-}

@@ -18,8 +18,7 @@ describe('TrafficComponent', () => {
       declarations: [TrafficComponent, ViewsComponent],
       providers: [StatsService, GitHubService, MdSnackBar],
       imports: [MaterialModule, BrowserAnimationsModule, HttpModule, ChartsModule]
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

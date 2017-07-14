@@ -11,6 +11,7 @@
             "assets",
             "favicon.ico",
             "favicon.png",
+            "favicon-144.png",
             "manifest.webapp"
         ],
         "index": "index.html",

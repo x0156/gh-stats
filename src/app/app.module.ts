@@ -12,6 +12,8 @@ import { PageNotFoundComponent, GitHubComponent } from './pages';
 import { GitHubService } from './services/git-hub.service';
 import { TrafficComponent } from './stats/traffic/traffic.component';
 import { ViewsComponent } from './stats/traffic/views.component';
+import { NgXBarComponent } from './stats/traffic/ngxbar.component';
+import {NgxChartsModule} from '@swimlane/ngx-charts';
 
 export const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: GitHubComponent },
@@ -26,7 +28,8 @@ export const appRoutes: Routes = [
     PageNotFoundComponent,
     GitHubComponent,
     TrafficComponent,
-    ViewsComponent
+    ViewsComponent,
+    NgXBarComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ export const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule.forRoot(appRoutes),
-    ChartsModule
+    ChartsModule,
+    NgxChartsModule
   ],
   providers: [StatsService, GitHubService],
   bootstrap: [AppComponent]

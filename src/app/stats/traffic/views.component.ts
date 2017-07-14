@@ -11,6 +11,7 @@ export class ViewsComponent implements OnInit {
   @Input()
   public set data(ds: IView[]) {
     if (ds) {
+      this.ds = ds;
       const labels = [];
       const count = [];
       const unique = [];
@@ -26,6 +27,7 @@ export class ViewsComponent implements OnInit {
       ]
     }
   };
+  public ds;
   @Input()
   public count;
   @Input()

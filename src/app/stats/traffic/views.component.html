@@ -4,7 +4,10 @@
         <span class="view title"><md-chip class="uniques" selected="true">Unique    {{uniques}}</md-chip></span>
     </md-card-header>
     <md-card-content>
-        <canvas baseChart [datasets]="barChartData " [labels]="barChartLabels " [options]="barChartOptions " [legend]="barChartLegend " [chartType]="barChartType ">
-                </canvas>
+        <!--<canvas baseChart [datasets]="barChartData " [labels]="barChartLabels " [options]="barChartOptions " [legend]="barChartLegend " [chartType]="barChartType ">
+                </canvas>-->
+
+        <app-chart-ngx-bar [ds]="ds"></app-chart-ngx-bar>
+
     </md-card-content>
 </md-card>

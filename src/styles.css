@@ -32,13 +32,13 @@
 }
 
 .count {
-    font-weight: 900;
-    background-color: rgb(255, 161, 181)!important;
-    color: #673AB7!important;
+    font-weight: 700;
+    background-color: #673AB7!important;
+    color: white!important;
 }
 
 .uniques {
-    font-weight: 900;
-    background-color: rgb(134, 199, 243)!important;
-    color: #673AB7!important;
+    font-weight: 700;
+    background-color: #607d8b!important;
+    color: white!important;
 }

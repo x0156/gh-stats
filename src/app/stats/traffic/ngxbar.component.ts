@@ -27,7 +27,6 @@ interface IView {
       [roundEdges]="false"
       [groupPadding]="4"
       [barPadding]="8"
-      (select)="onSelect($event)">
     </ngx-charts-bar-vertical-2d>
   `,
     changeDetection: ChangeDetectionStrategy.OnPush

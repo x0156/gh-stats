@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
         "ng": "ng",
-        "heroku-prebuild": "npm install -g http-server",
+        "heroku-prebuild": "npm install -g http-server @angular/cli @angular/compiler-cli",
         "heroku-postbuild": "ng build --prod",
         "start": "http-server dist/",
         "build": "webpack",
@@ -16,7 +16,6 @@
     },
     "private": true,
     "dependencies": {
-        "@angular/cli": "1.2.0",
         "@angular/animations": "^4.2.5",
         "@angular/cdk": "^2.0.0-beta.8",
         "@angular/common": "^4.0.0",
@@ -35,6 +34,7 @@
         "zone.js": "^0.8.4"
     },
     "devDependencies": {
+        "@angular/cli": "1.2.0",
         "@angular/compiler-cli": "^4.0.0",
         "@angular/language-service": "^4.0.0",
         "@types/jasmine": "~2.5.53",

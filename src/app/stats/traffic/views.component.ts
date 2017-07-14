@@ -15,7 +15,7 @@ export class ViewsComponent implements OnInit {
       const count = [];
       const unique = [];
       ds.forEach((e) => {
-        labels.push(new Date(e.timestamp).toDateString());
+        labels.push(new Date(e.timestamp).toDateString().split(/ \d{4}/)[0]);
         count.push(e.count);
         unique.push(e.uniques);
       });
@@ -46,8 +46,6 @@ export class ViewsComponent implements OnInit {
   ngOnInit() {
 
   }
-
-
 }
 
 interface IView {

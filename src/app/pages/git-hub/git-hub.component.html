@@ -1,9 +1,9 @@
 <p>
     <button *ngIf="!loggedIn()" md-button mdTooltip="Login with GitHub" style="font-size: 20px;padding:.8em;" (click)="authorize()">
     <img src="https://simpleicons.org/icons/github.svg" alt="GH">   
- </button>
+</button>
 </p>
-<div class="contents" *ngIf="user.name">
+<div class="contents" *ngIf="user.login">
     <md-card class="user-card">
         <md-card-header>
             <div md-card-avatar style="padding: 10px;margin-right: 20px;">
@@ -12,7 +12,7 @@
             <md-card-title> {{user.name}}</md-card-title>
             <md-card-subtitle> {{user.login}}</md-card-subtitle>
         </md-card-header>
-        <md-card-content><pre>{{user.bio}}</pre></md-card-content>
+        <md-card-content><pre style="overflow: hidden;">{{user.bio}}</pre></md-card-content>
     </md-card>
     <div>
         <md-progress-bar mode="determinate" [value]="timer"></md-progress-bar>

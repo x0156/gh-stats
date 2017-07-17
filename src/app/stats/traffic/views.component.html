@@ -3,10 +3,11 @@
         <span class="view title"><md-chip class="count" selected="true">Count     {{count}}</md-chip></span>
         <span class="view title"><md-chip class="uniques" selected="true">Unique    {{uniques}}</md-chip></span>
     </md-card-header>
-
     <md-card-content>
-        <div class="chartWrapper">
-            <app-chart-ngx-bar [ds]="data"></app-chart-ngx-bar>
-        </div>
+        <md-grid-list cols="1" rowHeight="2:1">
+            <md-grid-tile>
+                <app-chart-ngx-bar visibilityObserver [ds]="data" class="chartWrapper"></app-chart-ngx-bar>
+            </md-grid-tile>
+        </md-grid-list>
     </md-card-content>
 </md-card>

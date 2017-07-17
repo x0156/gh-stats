@@ -5,8 +5,9 @@ import { IRelease } from 'app/models/irelease';
 @Component({
   selector: 'app-traffic-views',
   templateUrl: './views.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ViewsComponent implements OnInit {
+export class ViewsComponent {
 
   @Input()
   public data;
@@ -15,9 +16,6 @@ export class ViewsComponent implements OnInit {
   @Input()
   public uniques;
   constructor() {
-  }
-  ngOnInit() {
-
   }
 }
 

@@ -1,5 +1,5 @@
-import { Component, NgModule, Input, ChangeDetectionStrategy } from '@angular/core';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { Component, NgModule, Input, ViewChild, AfterViewInit } from '@angular/core';
+import { BarVertical2DComponent } from '@swimlane/ngx-charts';
 
 function toSeries(name: string, value: number) {
     return { name, value };
@@ -27,12 +27,15 @@ interface IView {
       [barPadding]="8">
     </ngx-charts-bar-vertical-2d>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NgXBarComponent {
     @Input()
     public set ds(ds: IView[]) {
-        this.data = ds.map((e: IView) => {
+        ds = ds.reverse();
+        while (ds.length > 10) {
+            ds.pop();
+        }
+        this.data = ds.reverse().map((e: IView) => {
             const name = toDateLabel(e.timestamp);
             const series = [
                 toSeries('Count', e.count),
@@ -44,15 +47,14 @@ export class NgXBarComponent {
     @Input()
     public colors: string[] = ['#673ab7', '#607d8b'];
 
-
     public data: any[];
+
+    @ViewChild(BarVertical2DComponent)
+    private chart: BarVertical2DComponent;
 
     public get colorScheme() {
         return { domain: this.colors };
     };
 
-    public log(evt) {
-        console.log(evt);
-    }
 }
 

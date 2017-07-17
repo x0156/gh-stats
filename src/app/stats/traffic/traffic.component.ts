@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { StatsService } from 'app/services/stats.service';
 @Component({

@@ -13,6 +13,8 @@ import { TrafficComponent } from './stats/traffic/traffic.component';
 import { ViewsComponent } from './stats/traffic/views.component';
 import { NgXBarComponent } from './stats/traffic/ngxbar.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { InViewportModule } from 'ng-in-viewport';
+import 'intersection-observer';
 
 export const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: GitHubComponent },
@@ -36,7 +38,8 @@ export const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule.forRoot(appRoutes),
-    NgxChartsModule
+    NgxChartsModule,
+    InViewportModule.forRoot()
   ],
   providers: [StatsService, GitHubService],
   bootstrap: [AppComponent]

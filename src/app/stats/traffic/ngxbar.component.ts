@@ -24,7 +24,9 @@ interface IView {
       [yAxisLabel]="'Count'"
       [roundEdges]="false"
       [groupPadding]="4"
-      [barPadding]="8">
+      [barPadding]="8"
+      in-viewport
+      (inViewportAction)="update($event)">
     </ngx-charts-bar-vertical-2d>
   `,
 })
@@ -55,6 +57,9 @@ export class NgXBarComponent {
     public get colorScheme() {
         return { domain: this.colors };
     };
+    public update(e) {
+        this.chart.update();
+    }
 
 }
 

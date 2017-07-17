@@ -68,6 +68,11 @@
     height: 40px;
 }
 
+.primary,
+md-icon {
+    color: #673ab7;
+}
+
 .count {
     font-weight: 700;
     background-color: #673AB7!important;

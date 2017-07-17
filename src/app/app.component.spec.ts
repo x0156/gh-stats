@@ -1,13 +1,14 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { ReleaseDownloadsComponent } from './stats/release-downloads/release-downloads.component';
 import { StatsService } from './services/stats.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import { ChartsModule } from 'ng2-charts';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { RouterTestingModule } from '@angular/router/testing';
+import { APP_BASE_HREF } from '@angular/common';
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
@@ -18,10 +19,10 @@ describe('AppComponent', () => {
         AppComponent,
         ReleaseDownloadsComponent
       ],
-      providers: [StatsService],
-      imports: [MaterialModule, HttpModule, JsonpModule,
+      providers: [StatsService, { provide: APP_BASE_HREF, useValue: '/' }],
+      imports: [MaterialModule, HttpModule,
         RouterTestingModule.withRoutes([]),
-        ChartsModule
+        NgxChartsModule
         , BrowserAnimationsModule]
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);

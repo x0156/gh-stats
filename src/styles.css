@@ -40,7 +40,6 @@
 
 .tag.release {
     color: #00796B;
-    ;
 }
 
 .tag.prerelease {
@@ -82,7 +81,5 @@
 }
 
 .chartWrapper {
-    height: 320px;
-    width: 700px;
-    display: block;
+    height: 420px;
 }

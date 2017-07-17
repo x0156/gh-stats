@@ -1,8 +1,9 @@
-<md-card class="traffic" *ngIf="data" style="margin:.5em;padding: 4px;z-index: -1;">
+<md-card class="traffic" *ngIf="data" style="margin:.5em;padding: 2px;">
     <md-card-header style="margin:1.2em;">
         <span class="view title"><md-chip class="count" selected="true">Count     {{count}}</md-chip></span>
         <span class="view title"><md-chip class="uniques" selected="true">Unique    {{uniques}}</md-chip></span>
     </md-card-header>
+
     <md-card-content>
         <div class="chartWrapper">
             <app-chart-ngx-bar [ds]="data"></app-chart-ngx-bar>

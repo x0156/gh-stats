@@ -16,12 +16,10 @@ interface IView {
 
     template: `
     <ngx-charts-bar-vertical-2d
-      [view]="view"
       [scheme]="colorScheme"
       [results]="data"
       [xAxis]="true"
       [yAxis]="true"
-      [legend]="false"
       [xAxisLabel]="'Time'"
       [yAxisLabel]="'Count'"
       [roundEdges]="false"
@@ -43,8 +41,6 @@ export class NgXBarComponent {
             return { name, series };
         });
     }
-    //@Input()
-    public view: any[] = [640, 320];
     @Input()
     public colors: string[] = ['#673ab7', '#607d8b'];
 
@@ -55,5 +51,8 @@ export class NgXBarComponent {
         return { domain: this.colors };
     };
 
+    public log(evt) {
+        console.log(evt);
+    }
 }
 

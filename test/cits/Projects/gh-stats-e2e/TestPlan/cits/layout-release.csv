@@ -1,0 +1,16 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Scroll vertically to [<Data>],scrollVerticallyTo,@1050,,
+2,Releases,"Wait for [<Object>] to be visible ",waitForElementToBeVisible,,,GhStats
+3,label,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@22px,releaseDate,GhStats
+4,releaseDate,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,v1.0,GhStats
+5,releaseDate,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,v1.0,GhStats
+6,releaseDate,Assert if [<Object>] is  below [<Object2>] [<Data>],assertElementBelow,@8px,v1.0,GhStats
+7,file_download,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,disc_full,GhStats
+8,file_download,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,disc_full,GhStats
+9,file_download,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@>190px,disc_full,GhStats
+10,file_download,Assert if [<Object>] is aligned horizontally [<Data>] with [<Object2>],assertElementAlignedHoriz,@all,disc_full,GhStats
+11,Downloads_val,Assert if [<Object>] is  below [<Object2>] [<Data>],assertElementBelow,@>2px,Downloads,GhStats
+12,Size_val,Assert if [<Object>] is  below [<Object2>] [<Data>],assertElementBelow,@>2px,Size,GhStats
+13,Downloads,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,Size,GhStats
+14,Downloads,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,Size,GhStats
+15,Downloads,Assert if [<Object>] is aligned horizontally [<Data>] with [<Object2>],assertElementAlignedHoriz,@all,Size,GhStats

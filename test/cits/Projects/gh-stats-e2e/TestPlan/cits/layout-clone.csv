@@ -1,0 +1,9 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Clones,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@93%,Count_clone,GhStats
+2,Clones,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@~86%,Unique_clone,GhStats
+3,Clones,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@~85%,Count_clone,GhStats
+4,Clones,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@~85%,Unique_clone,GhStats
+5,Clones,Assert if [<Object>] is  above [<Data>],assertElementAbove,@~36px,Count_clone,GhStats
+6,Clones,Assert if [<Object>] is  above [<Data>],assertElementAbove,@~36px,Unique_clone,GhStats
+7,Clones,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@89px,Unique_clone,GhStats
+8,Clones,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@77px,Count_clone,GhStats

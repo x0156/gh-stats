@@ -1,0 +1,23 @@
+<Root ref="gh-stats-e2e" type="RC">
+<Folder ref="basic">
+<Scenario ref="cits">
+<TestCase exeType="Executable" ref="validate-release"/>
+<TestCase exeType="Executable" ref="validate-views"/>
+<TestCase exeType="Executable" ref="validate-clone"/>
+</Scenario>
+<Scenario ref="core">
+<TestCase exeType="Executable" ref="validate-headers"/>
+<TestCase exeType="Executable" ref="loadApp"/>
+</Scenario>
+</Folder>
+<Folder ref="layout">
+<Scenario ref="core">
+<TestCase exeType="Executable" ref="layout-header"/>
+</Scenario>
+<Scenario ref="cits">
+<TestCase exeType="Executable" ref="layout-clone"/>
+<TestCase exeType="Executable" ref="layout-views"/>
+<TestCase exeType="Executable" ref="layout-release"/>
+</Scenario>
+</Folder>
+</Root>

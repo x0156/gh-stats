@@ -1,0 +1,3 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+true,cits,validate,Single,Failed,Chrome,Default,Any
+true,cits,layout,Single,NoRun,Chrome,Default,Any

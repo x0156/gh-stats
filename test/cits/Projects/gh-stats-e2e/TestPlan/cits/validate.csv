@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,core:loadApp,,,
+2,Execute,,core:validate-headers,,,
+3,Execute,,cits:validate-clone,,,
+4,Execute,,cits:validate-views,,,
+5,Execute,,cits:validate-release,,,

@@ -13,6 +13,7 @@ env:
   matrix:
     - MODE=unit TEST=karma
     - MODE=e2e_cits TEST=smoke
+    - MODE=e2e_cits TEST=layout
 
 before_install:
     - export CHROME_BIN=chromium-browser

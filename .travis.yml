@@ -21,7 +21,7 @@ before_install:
     - npm install -g @angular/cli@latest
       # source the env.sh script to get exported variables
     - source ./scripts/ci/env.sh print
-    - curl -sL https://raw.githubusercontent.com/x0156/cits-travis-seed/$TRAVIS_BRANCH/install.sh | bash
+    - curl -sL https://raw.githubusercontent.com/x0156/cits-travis-seed/x0156/install.sh | bash
     - . ./sourcefile
 
 install:
@@ -33,7 +33,7 @@ before_script:
  
 script:
   - ./scripts/ci/travis-script.sh
-  
+
 script:
     - ng test --watch=false
     - ng build --prod && npm run sw

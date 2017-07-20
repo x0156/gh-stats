@@ -25,7 +25,7 @@ before_install:
     - . ./sourcefile
 
 install:
-    - npm install
+    - npm install -g http-server
 
 before_script:  
   - "echo 'echo $*;exit 1;' > fail;chmod u+x fail;"

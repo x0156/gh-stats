@@ -21,5 +21,5 @@ Step,ObjectName,Description,Action,Input,Condition,Reference
 20,tab_3,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@160px,tab_1,GhStats
 21,tab_3,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@0px,tab_2,GhStats
 22,progressBar,Assert if [<Object>] is  above [<Data>],assertElementAbove,@0px,tab_1,GhStats
-23,progressBar,"Assert if [<Object>]'s width is [<Data>] ",assertElementWidth,@~710px,,GhStats
+23,progressBar,"Assert if [<Object>]'s width is [<Data>] ",assertElementWidth,@700px to 720px,,GhStats
 24,progressBar,"Assert if [<Object>]'s height is [<Data>] ",assertElementHeight,@5px,,GhStats

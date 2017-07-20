@@ -38,7 +38,7 @@ if is_e2e; then
   exit 0
 elif is_e2e_cits; then
   echo "running cits e2e tests"
-  (ng serve)
+  ng serve &
   TEST=$(resolve $TEST)
   CITS -run $TEST  -dont_launch_report -standalone_report -setEnv $citsEnv
   reportDir=$(CITS  $TEST -latest_exe_loc)

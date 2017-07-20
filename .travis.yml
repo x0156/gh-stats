@@ -34,10 +34,6 @@ before_script:
 script:
   - ./scripts/ci/travis-script.sh
 
-script:
-    - ng test --watch=false
-    - ng build --prod && npm run sw
-
 deploy:
     provider: pages
     skip_cleanup: true

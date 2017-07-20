@@ -16,7 +16,7 @@ function  setEnvVar() {
 
 setEnvVar CHROME_DRIVER_BIN $HOME/bin/chromedriver
 setEnvVar CHROME_BIN google-chrome-stable
-setEnvVar citsEnv "driver.ChromeDriverPath=$CHROME_DRIVER_BIN;user.gh.token=$GITHUB_TOKEN"
+setEnvVar citsEnv "driver.ChromeDriverPath=$CHROME_DRIVER_BIN;user.gh.token=$GITHUB_TOKEN;user.gh.url=http://127.0.0.1:8080"
 
 setEnvVar projectBing "$workingDir/test/cits/Projects/gh-stats-e2e"
 setEnvVar smoke "-project_location $projectBing -release next -testset smoke"

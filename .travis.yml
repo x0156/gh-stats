@@ -9,11 +9,21 @@ addons:
 
 env:
   global:
-    - workingDir=$(pwd)    
-  matrix:
-    - MODE=unit TEST=karma
-    - MODE=e2e_cits TEST=smoke
-    - MODE=e2e_cits TEST=layout
+    - workingDir=$(pwd)
+
+jobs:
+    include:
+      - stage: Verify
+        script: "ng build --prod && npm run sw"
+      
+      - stage: Test
+        env:
+          - MODE=unit TEST=karma
+          - MODE=e2e_cits TEST=smoke
+          - MODE=e2e_cits TEST=layout
+      
+      - stage: Deploy
+        env: "DEPLOY_MODE=heroku-native"
 
 before_install:
     - export CHROME_BIN=chromium-browser

@@ -13,6 +13,5 @@ fi
 if [[ "${MODE}" ]]; then
   ./scripts/ci/travis-testing.sh
 elif [[ "${DEPLOY_MODE}" ]]; then
-  echo "deploy mode"
-  ng build --prod && npm run sw  
+  echo "nothing to deploy here"
 fi

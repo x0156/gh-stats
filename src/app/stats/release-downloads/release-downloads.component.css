@@ -1,0 +1,11 @@
+.stats {
+    color: black!important;
+}
+
+.stats.main {
+    font-weight: 700;
+}
+
+md-chip {
+    border-radius: 0px!important;
+}

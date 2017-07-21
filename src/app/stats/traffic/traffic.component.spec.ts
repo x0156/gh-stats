@@ -7,7 +7,7 @@ import { GitHubService } from 'app/services/git-hub.service';
 import { StatsService } from 'app/services/stats.service';
 import { TrafficComponent } from './traffic.component';
 import { ViewsComponent } from './views.component';
-import { ChartsModule } from 'ng2-charts';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 describe('TrafficComponent', () => {
   let component: TrafficComponent;
@@ -17,7 +17,7 @@ describe('TrafficComponent', () => {
     TestBed.configureTestingModule({
       declarations: [TrafficComponent, ViewsComponent],
       providers: [StatsService, GitHubService, MdSnackBar],
-      imports: [MaterialModule, BrowserAnimationsModule, HttpModule, ChartsModule]
+      imports: [MaterialModule, BrowserAnimationsModule, HttpModule, NgxChartsModule]
     }).compileComponents();
   }));
 

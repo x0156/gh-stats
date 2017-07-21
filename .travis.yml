@@ -7,18 +7,34 @@ node_js:
 addons:
     chrome: stable
 
+env:
+  global:
+    - workingDir=$(pwd)    
+  matrix:
+    - MODE=unit TEST=karma
+    - MODE=e2e_cits TEST=smoke
+    - MODE=e2e_cits TEST=layout
+
 before_install:
     - export CHROME_BIN=chromium-browser
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
-    - npm install -g @angular/cli@latest
+    - npm install -g @angular/cli@latest    
+    - npm install -g http-server
+      # source the env.sh script to get exported variables
+    - source ./scripts/ci/env.sh print
+    - curl -sL https://raw.githubusercontent.com/x0156/cits-travis-seed/x0156/install.sh | bash
+    - . ./sourcefile
 
 install:
     - npm install
 
+before_script:  
+  - "echo 'echo $*;exit 1;' > fail;chmod u+x fail;"
+  - chmod -R +x ./scripts/ci
+ 
 script:
-    - ng test --watch=false
-    - ng build --prod && npm run sw
+  - ./scripts/ci/travis-script.sh
 
 deploy:
     provider: pages

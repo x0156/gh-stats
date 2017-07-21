@@ -1,0 +1,16 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Scroll vertically to [<Data>],scrollVerticallyTo,@1050,,
+2,Releases,"Wait for [<Object>] to be visible ",waitForElementToBeVisible,,,GhStats
+3,Releases,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@Releases,,GhStats
+4,v1.0,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GhStats
+5,releaseDate,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GhStats
+6,label,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GhStats
+7,v1.0,Assert if [<Object>]'s Text Matches [<Data>],assertElementTextMatches,@v1.0,,GhStats
+8,releaseDate,Assert if [<Object>]'s Text Matches [<Data>],assertElementTextMatches,"@Tuesday, June 20, 2017",,GhStats
+9,releaseDate,"Click the [<Object>] ",Click,,,GhStats
+10,file_download,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GhStats
+11,Downloads,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@Downloads,,GhStats
+12,Downloads_val,Assert if [<Object>]'s Text Matches [<Data>],assertElementTextMatches,"@^\d+{3,}$",,GhStats
+13,disc_full,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GhStats
+14,Size,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@Size,,GhStats
+15,Size_val,Assert if [<Object>]'s Text Matches [<Data>],assertElementTextMatches,@\d+ MB,,GhStats

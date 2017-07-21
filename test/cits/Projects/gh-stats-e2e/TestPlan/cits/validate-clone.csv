@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Clones,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@Clones,,GhStats
+2,Count_clone,Assert if [<Object>]'s Text Contains [<Data>],assertElementTextMatches,@Count \d+,,GhStats
+3,Unique_clone,Assert if [<Object>]'s Text StartsWith [<Data>],assertElementTextMatches,@Unique \d+,,GhStats

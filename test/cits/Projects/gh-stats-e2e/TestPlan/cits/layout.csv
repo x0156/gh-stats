@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,core:loadApp,,,
+2,Execute,,core:layout-header,,,
+3,Execute,,cits:layout-clone,,,
+4,Execute,,cits:layout-views,,,
+5,Execute,,cits:layout-release,,,

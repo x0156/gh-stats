@@ -1,0 +1,290 @@
+<Root type="OR" ref="gh-stats-e2e">
+  <Page title="GhStats" ref="GhStats">
+    <ObjectGroup ref="GH">
+      <Object frame="" ref="GH">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//img[@alt='GH']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/p/button/span/img" ref="xpath" pref="5"/>
+        <Property value="" ref="class" pref="6"/>
+        <Property value="img[alt=&quot;GH&quot;]" ref="css" pref="7"/>
+        <Property value="img" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="mat-card-image">
+      <Object frame="" ref="mat-card-image">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//img[contains(@src,'https://avatars3.githubusercontent.com/u/2078649?v=4')]" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-card/md-card-header/div/img" ref="xpath" pref="5"/>
+        <Property value="mat-card-image" ref="class" pref="6"/>
+        <Property value="img.mat-card-image" ref="css" pref="7"/>
+        <Property value="img" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="name">
+      <Object frame="" ref="name">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Karuna']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-card/md-card-header/div[2]/md-card-title" ref="xpath" pref="5"/>
+        <Property value="mat-card-title" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-card.user-card.mat-card > md-card-header.mat-card-header > div.mat-card-header-text > md-card-title.mat-card-title." ref="css" pref="7"/>
+        <Property value="md-card-title" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="userName">
+      <Object frame="" ref="userName">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='x0156']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-card/md-card-header/div[2]/md-card-subtitle" ref="xpath" pref="5"/>
+        <Property value="mat-card-subtitle" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-card.user-card.mat-card > md-card-header.mat-card-header > div.mat-card-header-text > md-card-subtitle.mat-card-subtitle." ref="css" pref="7"/>
+        <Property value="md-card-subtitle" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="progressBar">
+      <Object frame="" ref="progressBar">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//md-progress-bar/div[3]" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/div/md-progress-bar/div[3]" ref="xpath" pref="5"/>
+        <Property value="mat-progress-bar-primary mat-progress-bar-fill mat-progress-bar-element" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > div > md-progress-bar.mat-progress-bar.mat-primary > div.mat-progress-bar-primary.mat-progress-bar-fill mat-progress-bar-element" ref="css" pref="7"/>
+        <Property value="div" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="tab_1">
+      <Object frame="" ref="tab_1">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="md-tab-label-0-0" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='CITS']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/md-tab-header/div[2]/div/div/div)[1]" ref="xpath" pref="5"/>
+        <Property value="mat-tab-label mat-ripple mat-tab-label-active" ref="class" pref="6"/>
+        <Property value="#md-tab-label-0-0" ref="css" pref="7"/>
+        <Property value="div" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="tab_2">
+      <Object frame="" ref="tab_2">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="md-tab-label-0-1" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='IE-Toolbar']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/md-tab-header/div[2]/div/div/div[2]" ref="xpath" pref="5"/>
+        <Property value="mat-tab-label mat-ripple" ref="class" pref="6"/>
+        <Property value="#md-tab-label-0-1" ref="css" pref="7"/>
+        <Property value="div" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="tab_3">
+      <Object frame="" ref="tab_3">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="md-tab-label-0-2" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Firefox-Addon']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/md-tab-header/div[2]/div/div/div[3]" ref="xpath" pref="5"/>
+        <Property value="mat-tab-label mat-ripple" ref="class" pref="6"/>
+        <Property value="#md-tab-label-0-2" ref="css" pref="7"/>
+        <Property value="div" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Clones">
+      <Object frame="" ref="Clones">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Clones']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-traffic/div/md-card/button/span)[1]" ref="xpath" pref="5"/>
+        <Property value="mat-button-wrapper" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-traffic > div > md-card.view.card mat-card > button.view.head mat-raised-button cdk-focused cdk-mouse-focused > span.mat-button-wrapper" ref="css" pref="7"/>
+        <Property value="span" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Count_clone">
+      <Object frame="" ref="Count_clone">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Count 63']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-traffic/div/app-traffic-views/md-card/md-card-header/span/md-chip)[1]" ref="xpath" pref="5"/>
+        <Property value="count mat-chip mat-primary mat-chip-selected" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-traffic > div > app-traffic-views > md-card.traffic.mat-card > md-card-header.mat-card-header > span.view.title > md-chip.count.mat-chip mat-primary mat-chip-selected" ref="css" pref="7"/>
+        <Property value="md-chip" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Unique_clone">
+      <Object frame="" ref="Unique_clone">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Unique 19']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-traffic/div/app-traffic-views/md-card/md-card-header/span[2]/md-chip)[1]" ref="xpath" pref="5"/>
+        <Property value="uniques mat-chip mat-primary mat-chip-selected" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-traffic > div > app-traffic-views > md-card.traffic.mat-card > md-card-header.mat-card-header > span.view.title > md-chip.uniques.mat-chip mat-primary mat-chip-selected" ref="css" pref="7"/>
+        <Property value="md-chip" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Views">
+      <Object frame="" ref="Views">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Views']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-traffic/div[2]/md-card/button/span" ref="xpath" pref="5"/>
+        <Property value="mat-button-wrapper" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-traffic > div:nth-of-type(1) > md-card.view.card mat-card > button.view.head mat-raised-button cdk-focused cdk-mouse-focused > span.mat-button-wrapper" ref="css" pref="7"/>
+        <Property value="span" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Releases">
+      <Object frame="" ref="Releases">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Releases']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/md-card/button/span" ref="xpath" pref="5"/>
+        <Property value="mat-button-wrapper" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-releases > md-card.view.card mat-card > button.view.head mat-raised-button cdk-focused cdk-mouse-focused > span.mat-button-wrapper" ref="css" pref="7"/>
+        <Property value="span" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="v1.0">
+      <Object frame="" ref="v1.0">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='v1.0']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-header/div[2]/md-card-title" ref="xpath" pref="5"/>
+        <Property value="mat-card-title" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-releases > app-release-downloads > div > md-card.mat-card > md-card-header.mat-card-header > div.mat-card-header-text > md-card-title.mat-card-title." ref="css" pref="7"/>
+        <Property value="md-card-title" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="releaseDate">
+      <Object frame="" ref="releaseDate">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-header/div[2]/md-card-subtitle" ref="xpath" pref="5"/>
+        <Property value="mat-card-subtitle" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-releases > app-release-downloads > div > md-card.mat-card > md-card-header.mat-card-header > div.mat-card-header-text > md-card-subtitle.mat-card-subtitle." ref="css" pref="7"/>
+        <Property value="md-card-subtitle" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="label">
+      <Object frame="" ref="label">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='label']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-header/div/md-chip-list/div/md-chip/md-icon" ref="xpath" pref="5"/>
+        <Property value="tag release mat-icon material-icons" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-releases > app-release-downloads > div > md-card.mat-card > md-card-header.mat-card-header > div.mat-card-avatar > md-chip-list.mat-chip-list > div.mat-chip-list-wrapper > md-chip.mat-chip.mat-primary > md-icon.tag.release mat-icon material-icons" ref="css" pref="7"/>
+        <Property value="md-icon" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="file_download">
+      <Object frame="" ref="file_download">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='file_download']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-content/md-icon)[1]" ref="xpath" pref="5"/>
+        <Property value="mat-icon material-icons" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-releases > app-release-downloads > div > md-card.mat-card > md-card-content.stats.mat-card-content > md-icon.mat-icon.material-icons" ref="css" pref="7"/>
+        <Property value="md-icon" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Downloads">
+      <Object frame="" ref="Downloads">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Downloads']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-content/md-input-container/div/div/div)[1]" ref="xpath" pref="5"/>
+        <Property value="mat-input-infix" ref="class" pref="6"/>
+        <Property value="md-input-container.mat-input-container.ng-tns-c14-27 > div.mat-input-wrapper > div.mat-input-flex > div.mat-input-infix" ref="css" pref="7"/>
+        <Property value="div" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Downloads_val">
+      <Object frame="" ref="Downloads_val">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="md-input-1" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//input[@placeholder='Downloads']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-content/md-input-container/div/div/div/input)[1]" ref="xpath" pref="5"/>
+        <Property value="stats main mat-input-element" ref="class" pref="6"/>
+        <Property value="#md-input-1" ref="css" pref="7"/>
+        <Property value="text" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="disc_full">
+      <Object frame="" ref="disc_full">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='disc_full']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-content/md-icon[2]" ref="xpath" pref="5"/>
+        <Property value="mat-icon material-icons" ref="class" pref="6"/>
+        <Property value="html > body.base > app-root > div > div > app-git-hub > div.contents > md-tab-group.mat-tab-group > div.mat-tab-body-wrapper > #md-tab-content-0-0 > div.mat-tab-body-content.ng-trigger ng-trigger-translateTab > app-releases > app-release-downloads > div > md-card.mat-card > md-card-content.stats.mat-card-content > md-icon.mat-icon.material-icons" ref="css" pref="7"/>
+        <Property value="md-icon" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Size">
+      <Object frame="" ref="Size">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//*[normalize-space(text())='Size']" ref="relative_xpath" pref="4"/>
+        <Property value="(/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-content/md-input-container[2]/div/div/div)[1]" ref="xpath" pref="5"/>
+        <Property value="mat-input-infix" ref="class" pref="6"/>
+        <Property value="md-input-container.mat-input-container.ng-tns-c14-28 > div.mat-input-wrapper > div.mat-input-flex > div.mat-input-infix" ref="css" pref="7"/>
+        <Property value="div" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Size_val">
+      <Object frame="" ref="Size_val">
+        <Property value="" ref="name" pref="1"/>
+        <Property value="md-input-3" ref="id" pref="2"/>
+        <Property value="" ref="link_text" pref="3"/>
+        <Property value="//input[@placeholder='Size']" ref="relative_xpath" pref="4"/>
+        <Property value="/html/body/app-root/div/div/app-git-hub/div/md-tab-group/div/md-tab-body/div/app-releases/app-release-downloads/div/md-card/md-card-content/md-input-container[2]/div/div/div/input" ref="xpath" pref="5"/>
+        <Property value="stats main mat-input-element" ref="class" pref="6"/>
+        <Property value="#md-input-3" ref="css" pref="7"/>
+        <Property value="text" ref="type" pref="8"/>
+        <Property value="" ref="ng-repeat" pref="8"/>
+      </Object>
+    </ObjectGroup>
+  </Page>
+</Root>

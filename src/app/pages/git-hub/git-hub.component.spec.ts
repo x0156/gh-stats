@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule } from '@angular/material';
 import { GitHubComponent } from './git-hub.component';
-import { ChartsModule } from 'ng2-charts';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { GitHubService } from '../../services/git-hub.service';
 import { StatsService } from '../../services/stats.service';
 import { TrafficComponent } from '../../stats/traffic/traffic.component';
 import { ViewsComponent } from '../../stats/traffic/views.component';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ReleaseDownloadsComponent, ReleasesComponent } from '../../stats';
 describe('GitHubComponent', () => {
@@ -18,7 +18,7 @@ describe('GitHubComponent', () => {
       declarations: [GitHubComponent, ReleaseDownloadsComponent, TrafficComponent, ReleasesComponent,
         ViewsComponent],
       providers: [GitHubService, StatsService],
-      imports: [RouterTestingModule, MaterialModule, ChartsModule, HttpModule]
+      imports: [RouterTestingModule, MaterialModule, NgxChartsModule, HttpModule]
     })
       .compileComponents();
   }));

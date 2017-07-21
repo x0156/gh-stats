@@ -1,0 +1,25 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,name,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@14px,mat-card-image,GhStats
+2,mat-card-image,"Assert if [<Object>]'s width is [<Data>] ",assertElementWidth,@88px,,GhStats
+3,mat-card-image,"Assert if [<Object>]'s height is [<Data>] ",assertElementHeight,@88px,,GhStats
+4,mat-card-image,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@14px,userName,GhStats
+5,tab_1,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,tab_2,GhStats
+6,tab_1,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,tab_3,GhStats
+7,tab_1,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,tab_2,GhStats
+8,tab_1,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,tab_3,GhStats
+9,tab_1,Assert if [<Object>] is partly inside [<Object2>] [<Data>],assertElementInsidePartly,@ 160px right,tab_2,GhStats
+10,tab_1,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@0px,tab_2,GhStats
+11,tab_1,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@160px,tab_3,GhStats
+12,tab_2,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,tab_1,GhStats
+13,tab_2,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,tab_3,GhStats
+14,tab_2,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,tab_1,GhStats
+15,tab_2,Assert if [<Object>] 's height is [<Data>] of [<Object2>],assertElementHeightElement,@100%,tab_3,GhStats
+16,tab_2,Assert if [<Object>] is partly inside [<Object2>] [<Data>],assertElementInsidePartly,@ 160px right,tab_3,GhStats
+17,tab_2,Assert if [<Object>] is leftof [<Object2>] [<Data>],assertElementLeftOf,@0px,tab_3,GhStats
+18,tab_2,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@0px,tab_1,GhStats
+19,tab_3,Assert if [<Object>] 's width is [<Data>] of [<Object2>],assertElementWidthElement,@100%,tab_1,GhStats
+20,tab_3,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@160px,tab_1,GhStats
+21,tab_3,Assert if [<Object>] is rightof [<Object2>] [<Data>],assertElementRightOf,@0px,tab_2,GhStats
+22,progressBar,Assert if [<Object>] is  above [<Data>],assertElementAbove,@0px,tab_1,GhStats
+23,progressBar,"Assert if [<Object>]'s width is [<Data>] ",assertElementWidth,@700 to 720 px,,GhStats
+24,progressBar,"Assert if [<Object>]'s height is [<Data>] ",assertElementHeight,@5px,,GhStats

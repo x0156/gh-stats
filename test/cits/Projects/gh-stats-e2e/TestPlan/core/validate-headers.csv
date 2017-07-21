@@ -1,0 +1,11 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,mat-card-image,"Wait for [<Object>] to be visible ",waitForElementToBeVisible,,,GhStats
+"//2",Browser,Creates Page dump for Page [<Data>],createPageDump,@GhStats,,
+3,mat-card-image,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GhStats
+4,name,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@Karuna,,GhStats
+5,userName,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@x0156,,GhStats
+6,Browser,Assert if Browser's Title Equals [<Data>],assertTitleEquals,@GhStats,,
+7,progressBar,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GhStats
+8,tab_1,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@CITS,,GhStats
+9,tab_2,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@IE-Toolbar,,GhStats
+10,tab_3,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,@Firefox-Addon,,GhStats

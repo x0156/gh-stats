@@ -12,6 +12,4 @@ fi
 
 if [[ "${MODE}" ]]; then
   ./scripts/ci/travis-testing.sh
-elif [[ "${DEPLOY_MODE}" ]]; then
-  echo "nothing to deploy here"
 fi

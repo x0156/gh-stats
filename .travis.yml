@@ -20,6 +20,8 @@ jobs:
       - stage: Verify
         script: "ng build --prod && npm run sw"
 
+      - stage: Test
+
       - stage: Deploy
         script: skip
         env: "DEPLOY_MODE=heroku-native"

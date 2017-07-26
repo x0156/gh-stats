@@ -70,11 +70,11 @@
         "source-map-loader": "^0.2.0",
         "style-loader": "^0.18.2",
         "stylus-loader": "^3.0.1",
-        "ts-node": "~3.2.0",
+        "ts-node": "~3.3.0",
         "tslint": "~5.5.0",
         "typescript": "~2.4.1",
         "url-loader": "^0.5.7",
-        "webpack": "~3.3.0",
+        "webpack": "~3.4.0",
         "webpack-dev-server": "~2.6.0",
         "workbox-build": "^1.0.1"
     }

@@ -20,16 +20,9 @@ function resolve(){
     eval echo \$$1
 }
 
-# Get commit diff
-if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-  fileDiff=$(git diff --name-only $TRAVIS_COMMIT_RANGE)
-else
-  fileDiff=$(git diff --name-only $TRAVIS_BRANCH...HEAD)
-fi
-
 # Check if tests can be skipped
-if [[ ${fileDiff} =~ ^(.*\.md\s*)*$ ]] && (is_e2e || is_unit); then
-  echo "Skipping e2e and unit tests since only markdown files changed"
+if [ "$SKIP_TESTS" = "true" ] && (is_e2e || is_unit || is_e2e_cits); then
+  echo "Skipping e2e and unit tests"
   exit 0
 fi
 
@@ -37,10 +30,13 @@ if is_e2e; then
   echo "e2e tests!"
   exit 0
 elif is_e2e_cits; then
-  echo "running cits e2e tests"
-  ng build --prod && npm run sw
+  echo "building app"
+  ng build --prod > app_build_log.txt 2>&1
+  npm run sw >> app_build_log.txt 2>&1
+  echo "starting app server"
   http-server dist/ > app_server_log.txt 2>&1 &
   TEST=$(resolve $TEST)
+  echo "running cits e2e tests"
   CITS -run $TEST  -dont_launch_report -standalone_report -setEnv $citsEnv
   reportDir=$(CITS  $TEST -latest_exe_loc)
   CITS  $TEST -latest_exe_data_raw > report.json

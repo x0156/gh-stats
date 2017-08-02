@@ -26,7 +26,7 @@ jobs:
       - stage: Deploy
         script: skip
         env: "DEPLOY_MODE=heroku-native"
-
+    
 before_install:
     - export CHROME_BIN=chromium-browser
     - export DISPLAY=:99.0

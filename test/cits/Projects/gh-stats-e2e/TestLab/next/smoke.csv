@@ -1,2 +1,3 @@
 Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
-true,cits,validate,Single,Failed,Chrome,Default,Any
+false,cits,validate,Single,Failed,Chrome,Default,Any
+true,cits,validate,Single,Failed,Chrome Headless,Default,Any

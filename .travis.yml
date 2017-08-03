@@ -16,17 +16,17 @@ jobs:
       - stage: Verify
         script: "ng build --prod && npm run sw"
 
-      - stage: Test
-        env: MODE=unit TEST=karma
+      #- stage: Test
+      #  env: MODE=unit TEST=karma
       - stage: Test
         env: MODE=e2e_cits TEST=smoke
       - stage: Test
         env: MODE=e2e_cits TEST=layout
 
-      - stage: Deploy
-        script: skip
-        env: "DEPLOY_MODE=heroku-native"
-
+      #- stage: Deploy
+      #  script: skip
+      #  env: "DEPLOY_MODE=heroku-native"
+    
 before_install:
     - export CHROME_BIN=chromium-browser
     - export DISPLAY=:99.0

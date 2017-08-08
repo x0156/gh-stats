@@ -75,7 +75,7 @@
         "typescript": "~2.4.1",
         "url-loader": "^0.5.7",
         "webpack": "~3.5.0",
-        "webpack-dev-server": "~2.6.0",
+        "webpack-dev-server": "~2.7.0",
         "workbox-build": "^1.2.0"
     }
 }

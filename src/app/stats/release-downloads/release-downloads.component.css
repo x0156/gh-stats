@@ -9,3 +9,7 @@
 md-chip {
     border-radius: 0px!important;
 }
+
+.mat-input-container {
+    max-width: 38%!important;
+}

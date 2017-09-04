@@ -72,10 +72,10 @@
         "stylus-loader": "^3.0.1",
         "ts-node": "~3.3.0",
         "tslint": "~5.7.0",
-        "typescript": "~2.4.1",
+        "typescript": "~2.5.2",
         "url-loader": "^0.5.7",
         "webpack": "~3.5.0",
         "webpack-dev-server": "~2.7.0",
-        "workbox-build": "^1.2.0"
+        "workbox-build": "^2.0.0"
     }
 }

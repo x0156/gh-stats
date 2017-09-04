@@ -19,6 +19,11 @@ export class GitHubService {
     return this._token;
   }
   private _user: any = {};
+  private _orgs: any = {};
+  private _from: String = 'CognizantQAHub';
+  set from(from: String) {
+    this._from = from;
+  }
   private gh: GitHub;
   public timer = 100;
   constructor(private http: Http, private snackBar: MdSnackBar) {
@@ -49,6 +54,7 @@ export class GitHubService {
         this.snackBar.open('Logged In!', '', {
           duration: 1000
         });
+        this.getRepos({ user: this._from }).subscribe(console.log);
         this.tick().subscribe((any) => {
           this.timer = (100 - ((any + 1) % this.interval) * 100 / this.interval);
         });
@@ -62,6 +68,12 @@ export class GitHubService {
   }
   public user(): any {
     return this._user;
+  }
+  public orgs(): any {
+    return this.http.get(this.gh.orgs).map(res => res.json());
+  }
+  public getRepos(config) {
+    return this.http.get(this.gh.repo(config.user)).map(res => res.json());
   }
   public getTraffic(config, type) {
     return this.http.get(this.gh.traffic(config.user, config.repo, type)).map(res => res.json());
@@ -83,19 +95,25 @@ class GitHub {
   constructor(private token: string) {
   }
   public get user() {
-    return auth(git_api() + '/user', this.token);
+    return auth(git_api() + '/user?', this.token);
+  }
+  public get orgs() {
+    return auth(git_api() + '/user/orgs?', this.token);
+  }
+  public repo(user) {
+    return auth(git_api() + `/users/${user}/repos?sort=pushed&direction=desc&`, this.token);
   }
   public traffic(user, repo, type = 'views') {
-    return auth(git_api() + `/repos/${user}/${repo}/traffic/${type}`, this.token);
+    return auth(git_api() + `/repos/${user}/${repo}/traffic/${type}?`, this.token);
   }
   public release(user, repo) {
-    return auth(git_api() + `/repos/${user}/${repo}/releases`, this.token);
+    return auth(git_api() + `/repos/${user}/${repo}/releases?`, this.token);
   }
 
 }
 
 function auth(url, token) {
-  return `${url}?access_token=${token}&token_type=bearer`
+  return `${url}access_token=${token}&token_type=bearer`
 }
 
 function git_api() {

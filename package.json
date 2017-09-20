@@ -2,7 +2,7 @@
     "name": "gh-stats",
     "version": "0.1.0",
     "license": "MIT",
-    "engines: {
+    "engines": {
       "node":"7.10.1",
       "npm":"4.2.0"
     },

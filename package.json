@@ -35,11 +35,11 @@
         "ng-in-viewport": "^1.2.0",
         "rxjs": "^5.1.0",
         "web-animations-js": "2.3.1",
-        "zone.js": "^0.8.4",      
+        "zone.js": "^0.8.4",
+        "@angular/compiler-cli": "^4.3.2",
         "@angular/cli": "1.4.1"
     },
-    "devDependencies": {
-        "@angular/compiler-cli": "^4.3.2",
+    "devDependencies": {        
         "@angular/language-service": "^4.3.2",
         "@types/jasmine": "~2.6.0",
         "@types/jasminewd2": "~2.0.3",

@@ -2,6 +2,10 @@
     "name": "gh-stats",
     "version": "0.1.0",
     "license": "MIT",
+    "engines: {
+      "node":"7.10.1",
+      "npm":"4.2.0"
+    }
     "scripts": {
         "ng": "ng",
         "heroku-prebuild": "npm install -g http-server",

@@ -1,6 +1,7 @@
 # GhStats
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/x0156/gh-stats.svg)](https://greenkeeper.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fx0156%2Fgh-stats.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fx0156%2Fgh-stats?ref=badge_shield)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
@@ -28,3 +29,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fx0156%2Fgh-stats.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fx0156%2Fgh-stats?ref=badge_large)
